@@ -1,5 +1,5 @@
 const loadProducts = () => {
-  //const url = `https://fakestoreapi.com/products`;http://127.0.0.1:5500/index.html
+  //const url = `https://fakestoreapi.com/products`;
     const url = `http://127.0.0.1:5500/products.json`;
 
   fetch(url)

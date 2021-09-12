@@ -1,6 +1,6 @@
 const loadProducts = () => {
   //const url = `https://fakestoreapi.com/products`;
-    const url = `http://127.0.0.1:5500/products.json`;
+    const url = `https://tushar-fashion-store.netlify.app/products.json`;
 
   fetch(url)
     .then((response) => response.json())

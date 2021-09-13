@@ -1,6 +1,8 @@
 const loadProducts = () => {
   //const url = `https://fakestoreapi.com/products`;
     const url = `https://tushar-fashion-store.netlify.app/products.json`;
+    
+    
 
   fetch(url)
     .then((response) => response.json())
@@ -12,7 +14,7 @@ loadProducts();
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
-    //console.log(product);
+    
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
@@ -85,7 +87,7 @@ const updateTaxAndCharge = () => {
 //grandTotal update function
 const updateTotal = () => {
   const grandTotal = getInputValue("price") + getInputValue("delivery-charge") + getInputValue("total-tax");
-  console.log(grandTotal)
+  
   document.getElementById("total").innerText = parseFloat(grandTotal.toFixed(2));
 };
 

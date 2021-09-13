@@ -5,7 +5,7 @@ body {
 .search-field {
   border: none;
   border-radius: 50px;
-  padding: 5px;
+  padding-top: 10px;
   outline: none;
 }
 .search-field:hover {
@@ -14,17 +14,19 @@ body {
 }
 .search-box {
   border: 1px solid rgb(3, 118, 211);
-  width: 300px;
+  width: 350px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  height: 43px;
+  
   
 }
 .search-button {
   padding:10px 17px!important;
   border-radius: 0px 3px 3px 0px!important;
-  margin-left: 33.7px;
+  float: right;
 }
 #all-products {
   display: grid;

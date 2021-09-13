@@ -1,6 +1,7 @@
 const loadProducts = () => {
   //const url = `https://fakestoreapi.com/products`;
     const url = `https://tushar-fashion-store.netlify.app/products.json`;
+    
     fetch(url)
     .then((response) => response.json())
     .then((data) => showProducts(data));
@@ -23,7 +24,7 @@ const showProducts = (products) => {
       <h2>Price: $ ${product.price}</h2>
       <h5 class="rating">Rating: ${product.rating.rate} out of 5</h5>
       <h5>${product.rating.count} customer ratings</h5>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary">Add to Cart</button>
       <button  id="details-btn" class="btn btn-danger" onclick="productDetails(${product.id})">Details</button></div>
       `;
     document.getElementById("all-products").appendChild(div);
@@ -99,7 +100,7 @@ let productDetails=async(id)=>{
                         <h4><b>category: </b>${data.category}</h4>
                         <h4><b>Description:</b></h4>
                         <p>${data.description}</p>
-                        <h4><b>Price: </b>${data.price}</h4>
+                        <h4><b>Price: $ </b>${data.price}</h4>
                         <button class="btn btn-danger" onclick="detailsClose()">Close</button>
                      </div>`;
           
